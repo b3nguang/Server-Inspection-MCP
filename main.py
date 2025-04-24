@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-'''
+"""
 @ Author: b3nguang
 @ Date: 2025-04-24 20:02:35
-'''
+"""
 
 import httpx
 from fastmcp import FastMCP
@@ -11,7 +11,7 @@ mcp = FastMCP("Forensics ssh mcp server")
 
 
 @mcp.tool()
-def send_command(command, url="http://47.96.137.40:6324/execute"):
+def send_command(command, url="http://localhost:8080/execute"):
     """
     向服务器发送命令并获取响应
 
